@@ -23,7 +23,7 @@ public class ProfileFragment extends PostsFragment{
         query.setLimit(20);
         query.addDescendingOrder(Post.KEY_CREATED_KEY);
         query.findInBackground(new FindCallback<Post>() {
-            @Override
+            @Override //just seeing if i can push
             public void done(List<Post> posts, ParseException e) {
                 if (e != null) {
                     Log.e(TAG, "Issue with getting posts", e);
